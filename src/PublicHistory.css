@@ -1,0 +1,296 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #000; /* Background color of the entire page */
+  }
+  
+  header {
+    position: relative;
+  }
+  
+  .container {
+    position: relative;
+    max-width: 80%;
+    height: fit-content; /* Fixed height */
+    margin: auto;
+    padding: 30px;
+    z-index: 0;
+    background: black;
+    border-radius: 20px; /* Increased border-radius for a softer look */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    overflow-y: auto; /* Add scrollbar for vertical overflow */
+  }
+  
+  /* Customize scrollbar */
+  .container::-webkit-scrollbar {
+    width: 8px; /* Width of vertical scrollbar */
+    background-color: rgba(255, 255, 255, 0.1); /* Background color */
+  }
+  
+  .container::-webkit-scrollbar-thumb {
+    background-color: rgba(255, 255, 255, 0.5); /* Thumb color */
+    border-radius: 4px; /* Rounded corners for the thumb */
+  }
+  
+  .container::-webkit-scrollbar-track {
+    background-color: transparent; /* Track background color (behind the thumb) */
+  }
+  
+  .image-container {
+    position: relative;
+    top: 20px;
+    z-index: 0;
+    text-align: center;
+  }
+  
+  .image-container img {
+    width: 30%;
+    margin-top: 50px;
+    height: auto;
+    border-radius: 8px;
+    z-index: 0;
+    position: relative;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .search-container {
+    top: 20px;
+    margin: auto;
+    padding: 20px;
+    position: relative;
+    text-align: center;
+    z-index: 1;
+  }
+  
+  .search-field {
+    margin-bottom: 20px;
+  }
+  
+  .search-field .MuiOutlinedInput-root {
+    padding-right: 40px; /* Add some padding to the right to make space for the icon */
+  }
+  
+  .search-field .MuiOutlinedInput-root::before {
+    content: '';
+    display: block;
+  }
+  
+  .search-field .MuiOutlinedInput-root fieldset {
+    border-color: #ffffff;
+  }
+  
+  .search-field .MuiOutlinedInput-root:hover fieldset {
+    border-color: #ffffff;
+    border-width: 2px;
+    border-style: solid;
+  }
+  
+  .search-field .MuiOutlinedInput-root.Mui-focused fieldset {
+    border-color: #ffffff;
+    border-width: 2px;
+  }
+  
+  .search-field .MuiInputBase-input {
+    color: #ffffff;
+  }
+  
+  .search-field .MuiInputLabel-root {
+    color: #aaaaaa;
+  }
+  
+  .search-button {
+    background-color: #ffffff;
+    color: #ffffff;
+  }
+  
+  .search-button:hover {
+    background-color: #e89e00;
+    opacity: 0.9;
+  }
+  
+  .result-container {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: transparent;
+    color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .error-text {
+    color: #f052f0;
+  }
+  
+  .final-verdict-text {
+    margin-bottom: 10px;
+    color: #ffffff;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .final-verdict-content {
+    text-align: left;
+    color: #ffffff;
+    font-size: 16px;
+    line-height: 1.6;
+  }
+  
+  .glassmorphism-effect {
+    background: rgba(255, 255, 255, 0.15); /* Semi-transparent background */
+    backdrop-filter: blur(10px); /* Blur effect */
+    border-radius: 12px; /* Rounded corners */
+    padding: 20px;
+    margin-top: 20px;
+    box-shadow: 0 80px 92px rgba(31, 38, 135, 0.37);
+  }
+  
+  .glass-image {
+    width: 20%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: -30px;
+  }
+
+  .search-button {
+    background-color: black;
+    color: #ffffff;
+  }
+
+  .accuracy-text {
+    position: relative;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    color: white;
+    font-size: xx-large;
+   }
+
+   .glass-image {
+    width: 30%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: -30px;
+    }
+
+    .css-4t3x6l-MuiPaper-root-MuiDrawer-paper {
+        background-color: black;
+    }
+
+    .search-button {
+        left: 40px;
+    }
+
+    .search-field .MuiOutlinedInput-root {
+        border-radius: 100px;
+    }
+
+    .css-sghohy-MuiButtonBase-root-MuiButton-root {
+        background-color: #000;
+    }
+
+    .search-button:hover {
+        background-color: #000;
+    }
+
+    @media screen and (max-width: 321px) {
+        .search-button {
+            left: 40px;
+        }
+        .image-container img {
+            width: 70%;
+        }
+        .container{
+            width: auto;
+            overflow-x: hidden;
+            padding: 0;
+        }
+        .glass-image {
+            width: 60%;
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: -30px;
+            position: relative;
+            left: 20%;
+        }
+        .container{
+          max-width: 100%;
+        }
+
+    }
+    @media screen and (min-width: 322px) and (max-width: 376px) {
+        .search-button {
+            left: 40px;
+        }
+        .image-container img {
+            width: 70%;
+        }
+        .container{
+            width: auto;
+            overflow-x: hidden;
+            padding: 0;
+        }
+        .glass-image {
+            width: 60%;
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: -30px;
+            position: relative;
+            left: 20%;
+        }
+
+        .container{
+          max-width: 100%;
+        }
+
+    }
+    
+    @media screen and (min-width: 377px) and (max-width: 475px) {
+        .search-button {
+            left: 40px;
+        }
+        .image-container img {
+            width: 70%;
+        }
+        .container{
+            width: auto;
+            overflow-x: hidden;
+            padding: 0;
+        }
+        .glass-image {
+            width: 60%;
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: -30px;
+            position: relative;
+            left: 20%;
+        }
+
+        .container{
+          max-width: 100%;
+        }
+    }
+    @media screen and (min-width:476px) and (max-width: 769px){
+        .search-button {
+            left: 40px;
+        }
+        .container{
+            width: auto;
+            padding: 0;
+        }
+
+        .search-container{
+          max-width: 80%;
+        }
+
+        
+    }
+    @media screen and (min-width: 769px) {
+        .search-button {
+            left: 40px;
+        }
+        .search-container {
+          max-width: 70%;
+        }
+    }
+    
+    

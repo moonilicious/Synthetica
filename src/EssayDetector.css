@@ -1,0 +1,285 @@
+/* Common styles for scrollbar */
+.container,
+.left-column,
+.right-column,
+.chat-section,
+.chatbox {
+  scrollbar-width: thin;
+  scrollbar-color: #fff #222;
+}
+
+/* Large screens (desktops) */
+@media screen and (min-width: 1024px) {
+  .container {
+    display: flex;
+    height: 90vh;
+    background-color: #000;
+    padding: 2px;
+    overflow: hidden;
+  }
+  .progress {
+    display: none;
+  }
+  .left-column {
+    flex: 1;
+    overflow: auto;
+    color: #fff;
+    background-color: #222;
+    padding: 2px;
+    border-radius: 20px;
+    margin-right: 20px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+  }
+  .right-column {
+    flex: 1;
+    padding-left: 20px;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+  }
+  .essay-history {
+    margin-right: 0 !important;
+  }
+  .essay-result {
+    padding-left: 0 !important;
+    margin-left: 0 !important;
+  }
+}
+
+/* Extra small screens (phones) */
+@media screen and (max-width: 320px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background-color: #000;
+    padding: 8px;
+    overflow: hidden;
+  }
+  .Donut,
+  .history {
+    display: none;
+  }
+  .chat-section {
+    flex: 1;
+    overflow: auto;
+    color: #fff;
+    background-color: #222;
+    padding: 2px;
+    border-radius: 20px;
+    margin-bottom: 2px;
+    justify-content: center;
+  }
+  .graph-section {
+    flex: 1;
+    color: #ffffff;
+    padding: 20px;
+  }
+  .chatbox {
+    margin-top: 10px;
+  }
+}
+
+/* Small screens (phones) */
+@media screen and (min-width: 321px) and (max-width: 475px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background-color: #000;
+    padding: 8px;
+    overflow: hidden;
+  }
+  .history {
+    display: none;
+  }
+  .Donut {
+    display: none;
+  }
+  .chat-section {
+    flex: 1;
+    overflow: auto;
+    color: #fff;
+    background-color: #222;
+    padding: 2px;
+    border-radius: 20px;
+    margin-bottom: 2px;
+    justify-content: center;
+  }
+  .graph-section {
+    flex: 1;
+    color: #ffffff;
+    padding: 20px;
+  }
+}
+
+/* Medium screens (phones) */
+@media screen and (min-width: 476px) and (max-width: 768px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background-color: #000;
+    padding: 8px;
+    overflow: hidden;
+  }
+  .Donut {
+    display: none;
+  }
+  .history {
+    display: none;
+  }
+  .chat-section {
+    flex: 1;
+    overflow: auto;
+    color: #fff;
+    background-color: #222;
+    padding: 2px;
+    border-radius: 20px;
+    margin-bottom: 2px;
+    justify-content: center;
+  }
+  .graph-section {
+    flex: 1;
+    color: #ffffff;
+    padding: 20px;
+  }
+  .chatbox {
+    margin-top: 10px;
+  }
+}
+
+/* Tablet view */
+@media screen and (min-width: 769px) and (max-width: 899px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background-color: #000;
+    padding: 8px;
+    overflow: hidden;
+  }
+  .Donut{
+    display: block;
+  }
+  .history {
+    display: none;
+  }
+  .chat-section {
+    flex: 1;
+    overflow: auto;
+    color: #fff;
+    background-color: #222;
+    padding: 2px;
+    border-radius: 20px;
+    margin-bottom: 2px;
+    justify-content: center;
+  }
+  .graph-section {
+    flex: 1;
+    color: #ffffff;
+    padding: 20px;
+  }
+}
+
+/* Larger screens */
+
+/* Larger screens between 900px and 1023px */
+@media screen and (min-width: 900px) and (max-width: 1023px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh; /* Adjusted height for better visibility */
+    background-color: #000;
+    padding: 8px;
+    overflow: hidden;
+  }
+  .Donut {
+    display: block;
+  }
+  .chat-section {
+    flex: 1;
+    overflow: auto;
+    color: #fff;
+    background-color: #222;
+    padding: 2px;
+    border-radius: 20px;
+    margin-bottom: 2px;
+    justify-content: center;
+  }
+  .graph-section {
+    flex: 1;
+    color: #ffffff;
+    padding: 20px;
+  }
+  .history {
+    display: block;
+  }
+}
+
+
+/* Adjustments for specific widths */
+@media (min-width: 1024px) and (max-width: 1439px) {
+  .css-r6ewbb-MuiToolbar-root {
+    min-height: 64px;
+    width: 1190px;
+    background-color: black;
+  }
+  .css-p9djp9-MuiContainer-root {
+    padding-left: 24px;
+    padding-right: 24px;
+    height: 930px;
+    width: 116.1%;
+  }
+  .history {
+    display: block;
+  }
+}
+
+/* Larger screens */
+@media (min-width: 1440px) {
+  .css-p9djp9-MuiContainer-root {
+    padding-left: 24px;
+    padding-right: 24px;
+    height: 930px;
+    width: 100%;
+  }
+}
+
+
+/* Adjustments for specific widths */
+@media (min-width: 1024px) and (max-width: 1439px) {
+  .css-r6ewbb-MuiToolbar-root {
+    min-height: 64px;
+    width: 100%;
+    background-color: black;
+  }
+  .css-p9djp9-MuiContainer-root {
+    padding-left: 24px;
+    padding-right: 24px;
+    height: 92vh;
+    width: 116.1%;
+  }
+}
+
+/* Larger screens */
+@media (min-width: 1440px) {
+  .css-p9djp9-MuiContainer-root {
+    padding-left: 24px;
+    padding-right: 24px;
+    height: 92vh;
+    width: 100%;
+  }
+}
+
+
+/* Center the app name and header on smaller screens */
+@media screen and (max-width: 475px) {
+  h1 {
+    text-align: center;
+  }
+}
+
+

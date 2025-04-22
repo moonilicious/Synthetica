@@ -1,0 +1,62 @@
+.pricing-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .pricing-content {
+    display: flex;
+    gap: 100px;
+    width: 100%;
+    justify-content: center;
+    margin-top: 60px;
+    overflow-x: hidden;
+  }
+  
+  .pricing-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative; /* Add relative positioning to the container */
+  }
+  
+  .pricing-image {
+    width: 300px; /* Adjust the size as needed */
+    height: auto;
+  }
+  
+  .image-button {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    position: absolute; /* Position button absolutely within the container */
+    bottom: 6px; /* Align button to the bottom of the image */
+  }
+  
+  .image-button img {
+    width: 300px; /* Adjust the size as needed */
+    height: auto;
+  }
+
+
+  @media screen and (max-width: 1024px) and (min-width: 769px) {
+    .pricing-content {
+      display: flex;
+      gap: 100px;
+      width: 100%;
+      justify-content: center;
+      margin-top: 60px;
+      overflow-x: hidden;
+      flex-direction: row;
+      flex-wrap: wrap;
+      margin-left: 200px;
+      padding-bottom: 100px;
+    }  
+  }
+
+  @media screen and (min-width:320px) and (max-width: 769px){
+    .pricing-content{
+      flex-direction: column;
+    }
+  }

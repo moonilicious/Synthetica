@@ -1,0 +1,314 @@
+/* Home.css */
+
+/* Set the background color to black */
+body {
+  background-color: black;
+  margin: 0; /* Remove default margin */
+}
+
+/* Style the main content section */
+.main-content {
+  position: relative; /* Position relative for absolute positioning of images */
+  display: flex;
+  justify-content: space-between; /* Space between for sticking to both ends */
+  align-items: center;
+  padding: 50px; /* Add padding for better spacing */
+}
+
+/* Style the images */
+.synthetica-image {
+  max-width: 100%;
+  height: auto;
+}
+
+.left-content img,
+.right-content img {
+  max-width: 100%;
+  height: 800px;
+}
+
+.detective-image {
+  max-width: 100%;
+  margin-top: 30px;
+  height: auto;
+  border-radius: 10px; /* Add border radius for rounded corners */
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); /* Add shadow for depth */
+  justify-content: space-between;
+}
+
+/* Position the images */
+.left-content {
+  position: absolute;
+  max-width: 50%;
+  top: 900%;
+  left: 0%;
+  transform: translateY(-50%);
+}
+
+.right-content {
+  position: absolute;
+  max-width: 50%;
+  top: 1000%;
+  right: 0%;
+  transform: translateY(-50%);
+}
+
+.synthetica-container {
+  position: absolute;
+  top: 200%;
+  left: 40%;
+  transform: translate(-50%, -50%);
+  z-index: 0;
+}
+
+/* Style the right content to overlap with the navbar */
+.right-content {
+  z-index: 1; /* Ensure it's on top */
+  margin-top: -600px; /* Adjust margin to overlap with navbar */
+}
+
+.detective-container {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  top: 350%;
+  left: 29%;
+  
+  transform: translate(-50%, -50%);
+  text-align: center; /* Center the button */
+  z-index: 0;
+}
+
+.products {
+  margin-bottom: 500px;
+}
+
+
+.rectangle-image {
+  display: block;
+  height: 80px;
+  margin-top: 40px;
+}
+
+.try-us-text {
+  position: absolute;
+  top: 63%;
+  transform: translate(-50%, -50%);
+  color: rgb(255, 255, 255); /* Adjust color as needed */
+  text-align: center;
+  display: flex;
+  font-weight: 800;
+  font-family: "Gemunu Libre", sans-serif;
+  align-items: center;
+  justify-content: center;
+}
+.try-us-text {
+  left: 25%;
+  font-size: larger;
+  width: max-content;
+}
+
+.launch-icon {
+  margin-left: 0.5em;
+}
+
+/* Style the footer */
+footer {
+  text-align: center;
+  padding: 20px 0;
+  color: white; /* Set text color to white for better contrast */
+}
+
+.about-us {
+  margin-top: 600px;
+  padding-left: 300px;
+}
+
+@media screen and (max-width: 320px) {
+  .detective-image {
+    display: none;
+  }
+
+  .left-content img {
+    visibility: hidden;
+  }
+
+  .right-content {
+    max-width: 300px;
+    opacity: 0.3;
+    z-index: 0;
+    margin-right: 0px;
+  }
+
+  .about-us {
+    visibility: visible;
+    margin-top: 800px;
+    width: 100%;
+    padding: 0%;
+  }
+
+  .synthetica-container {
+    left: 50%;
+    z-index: 1;
+  }
+
+  .synthetica-image {
+    height: 30px;
+    max-width: 250px;
+  }
+
+  .detective-container {
+    left: 50%;
+    z-index: 1;
+  }
+
+  .bottom {
+    visibility: visible;
+    background-color: black;
+    width: 100%;
+    top: 100px;
+  }
+  .try-us-text {
+    left: 50%;
+    font-size: larger;
+    width: max-content;
+  }
+  .products {
+    margin-top: 300px;
+    margin-bottom: 0px;
+  }
+}
+
+
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  .detective-image {
+    display: none;
+  }
+  
+  .left-content img {
+    visibility: hidden;
+  }
+
+  .right-content {
+    max-width: 350px; /* Increased width to fit the larger screen size */
+    opacity: 0.3;
+    z-index: 0;
+    margin-right: 0px;
+  }
+
+  .about-us {
+    visibility: visible;
+    margin-top: 600px; /* Adjusted margin-top for better spacing */
+    width: 100%;
+    padding: 0%;
+  }
+
+  .synthetica-container {
+    left: 50%;
+    z-index: 1;
+  }
+
+  .synthetica-image {
+    height: 40px; /* Increased height for better visibility */
+    max-width: 300px; /* Increased max-width for larger screens */
+  }
+
+  .detective-container {
+    left: 50%;
+    z-index: 1;
+  }
+
+  .bottom {
+    visibility: visible;
+    background-color: black;
+    width: 100%;
+    top: 100px;
+  }
+  .try-us-text {
+    left: 50%;
+    font-size: larger;
+    width: max-content;
+  }
+  .products {
+    margin-top: 300px;
+    margin-bottom: 300px;
+  }
+}
+
+@media screen and (max-width: 1024px) and (min-width: 769px) {
+  .main-content {
+    padding: 50px; /* Default padding */
+  }
+
+  .left-content,
+  .right-content {
+    position: absolute; /* Use absolute positioning */
+    max-width: 50%; /* Default max width */
+    transform: translateY(-50%); /* Default transform */
+  }
+
+  .left-content {
+    top: 900%;
+    left: 0%;
+  }
+
+  .right-content {
+    top: 1000%;
+    z-index: 0; /* Ensure it's on top */
+    margin-top: -600px; /* Default margin */
+    opacity: 0.5;
+  }
+
+  .synthetica-container {
+    position: absolute; /* Default position */
+    top: 200%;
+    left: 40%;
+    transform: translate(-50%, -50%); /* Default transform */
+    z-index: 0; /* Default z-index */
+  }
+
+  .detective-container {
+    position: absolute; /* Default position */
+    top: 300%;
+    left: 39%;
+    transform: translate(-50%, -50%); /* Default transform */
+    z-index: 0; /* Default z-index */
+  }
+
+  .try-us-button {
+    max-width: 300px; /* Default button width */
+  }
+
+  .about-us {
+    margin-top: 600px; /* Default margin-top */
+    padding-left: 300px; /* Default padding */
+  }
+  .try-us-text {
+    left: 50%;
+    font-size: larger;
+    width: max-content;
+  }
+  .detective-image {
+    margin-top: 70px;
+  }
+
+  .image-row-top {
+    display: flex;
+    top: 300px;
+    gap: 40px;
+    right: 10px;
+    justify-content: center;
+    position: relative;
+    z-index: 1;
+    margin-left: 30px;
+  }
+
+  .background-img {
+    top: -340px;
+    left: 329px;
+    width: 85%;
+    height: 420%;
+  }
+
+}
+

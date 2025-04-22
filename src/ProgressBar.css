@@ -1,0 +1,16 @@
+.progressbar{
+    display: none;
+}
+@media screen and (max-width: 768px) {
+    .progressbar{
+        display: block;
+        margin: 0%;
+    }
+    .progressbar-container {
+        width: 100%;
+        max-width: 600px;
+        margin: 0 auto;
+      }
+      
+}
+

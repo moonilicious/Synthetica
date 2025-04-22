@@ -1,0 +1,11 @@
+.menu-items-container {
+    display: flex;
+    direction: row;
+    flex-direction: row;
+  }
+  
+  .menu-item {
+    color: white;
+    margin-right: 1rem; /* Adjust margin as needed */
+  }
+  

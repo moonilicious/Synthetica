@@ -1,0 +1,106 @@
+/* Container setup */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+/* Styles for titles and headings */
+h1, h2 {
+    color: #333;
+}
+
+/* Text input area styling */
+.text-input {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.text-input label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: #333;
+}
+
+textarea {
+    width: 100%;
+    height: 200px; /* Sufficient height to accommodate multiple lines of text */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    resize: none; /* Disables resizing the textarea */
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+}
+
+/* Button styling */
+.predict-btn {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.predict-btn:hover {
+    background-color: #0056b3;
+}
+
+.predict-btn:disabled {
+    background-color: #ccc;
+    cursor: default;
+}
+
+/* Output section styling */
+.output {
+    width: 100%;
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #f8f8f8;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.output p {
+    font-size: 16px;
+    color: #333;
+}
+
+.highlight-red {
+    color: red;
+}
+
+.highlight-green {
+    color: green;
+}
+
+/* Analysis section styling */
+.analysis-section {
+    width: 100%;
+    margin-top: 20px;
+}
+
+.verdict-section {
+    width: 100%;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.verdict-section h2 {
+    color: #007bff;
+}
+
+.verdict-section p {
+    font-size: 18px;
+    color: #444;
+    font-weight: bold;
+}

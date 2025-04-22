@@ -1,0 +1,144 @@
+.signup-bg {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.signup-container {
+  position: relative;
+  width: 650px;
+  padding: 40px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.signup-title {
+  width: 70%;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.signup-input {
+  width: 100%;
+  height: 50px;
+  margin-bottom: 15px;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  background: url('./ALLBOX.webp') no-repeat center;
+  background-size: contain;
+  text-align: center;
+  color: white;
+  border-radius: 5px;
+}
+
+.signup-button {
+  width: 100%;
+  height: 50px;
+  cursor: pointer;
+  margin-top: 20px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.3s ease;
+}
+
+.signup-button:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.signup-button-image {
+  width: 80%;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.signup-error {
+  color: red;
+  margin-top: 10px;
+  text-align: center;
+}
+
+@media screen and (max-width: 767px) {
+  .signup-container {
+    width: 90%;
+    max-width: 500px;
+    padding: 20px;
+  }
+
+  .signup-input {
+    font-size: 14px;
+    height: 45px;
+  }
+}
+
+@media screen and (min-width: 375px) and (max-width: 474px) {
+  .signup-container {
+    width: 95%;
+    padding: 15px;
+  }
+
+  .signup-input {
+    font-size: 12px;
+    height: auto;
+    padding: 10px;
+  }
+}
+
+@media screen and (max-width: 374px) {
+  .signup-container {
+    width: 200%;
+    padding: 10px;
+  }
+
+  .signup-input {
+    font-size: 10px;
+    height: auto;
+    padding: 6px;
+  }
+
+  .signup-title {
+    width: 50%;
+  }
+}
+
+.google-signin-button {
+  
+  background: transparent;
+  border: 1px solid white;
+  border-radius: 50px;
+  color: white;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  margin-top: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s, color 0.2s;
+}
+
+.google-signin-button:hover {
+  transform: scale(1.05);
+  color: #f0f0f0;
+}
+
+/* Google icon styling */
+.google-icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
